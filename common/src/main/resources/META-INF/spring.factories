@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  info.jiatu.jtlsp.common.config.Knife4jConfig,\
+  info.jiatu.jtlsp.common.config.GlobalExceptionHandler,\
+  info.jiatu.jtlsp.common.config.SnowflakeIdConfig
