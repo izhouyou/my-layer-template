@@ -1,10 +1,9 @@
-package info.jiatu.jtlsp.template.config;
+package info.jiatu.jtlsp.dao.config;
 
 import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor;
 import org.mybatis.spring.annotation.MapperScan;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -16,7 +15,6 @@ import org.springframework.context.annotation.Configuration;
  * @editNote
  */
 @Configuration
-@SpringBootApplication(scanBasePackages = "info.jiatu.jtlsp")
 @MapperScan("info.jiatu.jtlsp.dao.mapper")
 public class MybatisPlusConfig {
 

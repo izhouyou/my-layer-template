@@ -11,7 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @dateTime 2022/10/14 10:08
  * @editNote
  */
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "info.jiatu.jtlsp")
 @RetrofitScan("info.jiatu.jtlsp.template.rpc.service")
 public class MySubcontractTemplateApplication {
 
