@@ -33,6 +33,9 @@ public class ConvertUtils {
     }
 
     public static <S, T> T convert(S source, Class<T> target) {
+        if (source == null) {
+            return null;
+        }
         try {
             return convert(source, target.newInstance());
         } catch (InstantiationException | IllegalAccessException e) {

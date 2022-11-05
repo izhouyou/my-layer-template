@@ -1,16 +1,18 @@
 package info.jiatu.jtlsp.web.controller;
 
+import info.jiatu.jtlsp.common.util.ConvertUtils;
+import info.jiatu.jtlsp.model.dto.LogErrorInfoDto;
 import info.jiatu.jtlsp.web.common.annotation.Log;
 import info.jiatu.jtlsp.web.common.constant.LogAnnotConstants;
 import info.jiatu.jtlsp.common.annotation.AddGroups;
 import info.jiatu.jtlsp.common.annotation.UpdGroups;
 import info.jiatu.jtlsp.common.response.Result;
 import info.jiatu.jtlsp.common.util.ResultGeneratorUtils;
+import info.jiatu.jtlsp.dao.domain.LogErrorInfo;
+import info.jiatu.jtlsp.service.LogErrorInfoService;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import info.jiatu.jtlsp.dao.domain.LogErrorInfo;
-import info.jiatu.jtlsp.service.LogErrorInfoService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
@@ -26,7 +28,7 @@ import java.util.List;
  * 操作日志异常信息(LogErrorInfo)表控制层
  *
  * @author izhouy
- * @since 2022-10-21 01:51:11
+ * @since 2022-11-05 19:46:21
  */
 @RestController
 @RequestMapping("logErrorInfo")
@@ -42,14 +44,14 @@ public class LogErrorInfoController {
     /**
      * 分页查询所有数据
      *
-     * @param page         分页对象
-     * @param logErrorInfo 查询实体
+     * @param page 分页对象
+     * @param dto 查询实体
      * @return 所有数据
      */
     @GetMapping
     @ApiOperation("操作日志异常信息分页查询接口")
-    public Result<IPage<LogErrorInfo>> selectAll(Page<LogErrorInfo> page, @Valid LogErrorInfo logErrorInfo) {
-        return ResultGeneratorUtils.success(this.logErrorInfoService.page(page, new QueryWrapper<>(logErrorInfo)));
+    public Result<IPage<LogErrorInfo>> selectAll(Page<LogErrorInfo> page, @Valid LogErrorInfoDto dto) {
+        return ResultGeneratorUtils.success(this.logErrorInfoService.page(page, new QueryWrapper<>(ConvertUtils.convert(dto, LogErrorInfo.class))));
     }
 
     /**
@@ -68,27 +70,27 @@ public class LogErrorInfoController {
     /**
      * 新增数据
      *
-     * @param logErrorInfo 实体对象
+     * @param dto 实体对象
      * @return 新增结果
      */
     @PostMapping
     @ApiOperation("操作日志异常信息新增接口")
     @Log(modul = "LogErrorInfo", type = LogAnnotConstants.INSERT, desc = "操作日志异常信息新增接口")
-    public Result<Boolean> insert(@Validated(AddGroups.class) @RequestBody LogErrorInfo logErrorInfo) {
-        return ResultGeneratorUtils.success(this.logErrorInfoService.save(logErrorInfo));
+    public Result<Boolean> insert(@Validated(AddGroups.class) @RequestBody LogErrorInfoDto dto) {
+        return ResultGeneratorUtils.success(this.logErrorInfoService.save(ConvertUtils.convert(dto, LogErrorInfo.class)));
     }
 
     /**
      * 修改数据
      *
-     * @param logErrorInfo 实体对象
+     * @param dto 实体对象
      * @return 修改结果
      */
     @PutMapping
     @ApiOperation("操作日志异常信息更新接口")
     @Log(modul = "LogErrorInfo", type = LogAnnotConstants.UPDATE, desc = "操作日志异常信息更新接口")
-    public Result<Boolean> update(@Validated(UpdGroups.class) @RequestBody LogErrorInfo logErrorInfo) {
-        return ResultGeneratorUtils.success(this.logErrorInfoService.updateById(logErrorInfo));
+    public Result<Boolean> update(@Validated(UpdGroups.class) @RequestBody LogErrorInfoDto dto) {
+        return ResultGeneratorUtils.success(this.logErrorInfoService.updateById(ConvertUtils.convert(dto, LogErrorInfo.class)));
     }
 
     /**
