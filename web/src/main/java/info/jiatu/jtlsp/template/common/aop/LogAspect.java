@@ -2,10 +2,10 @@ package info.jiatu.jtlsp.template.common.aop;
 
 import info.jiatu.jtlsp.template.common.annotation.Log;
 import info.jiatu.jtlsp.template.common.constant.LogAnnotConstants;
-import info.jiatu.jtlsp.template.domain.LogErrorInfo;
-import info.jiatu.jtlsp.template.domain.LogInfo;
-import info.jiatu.jtlsp.template.service.LogErrorInfoService;
-import info.jiatu.jtlsp.template.service.LogInfoService;
+import info.jiatu.jtlsp.dao.domain.LogErrorInfo;
+import info.jiatu.jtlsp.dao.domain.LogInfo;
+import info.jiatu.jtlsp.service.LogErrorInfoService;
+import info.jiatu.jtlsp.service.LogInfoService;
 import info.jiatu.jtlsp.template.util.IpUtils;
 import info.jiatu.jtlsp.common.response.Result;
 import info.jiatu.jtlsp.common.util.ConvertUtils;

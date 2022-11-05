@@ -1,7 +1,7 @@
-package info.jiatu.jtlsp.template.service;
+package info.jiatu.jtlsp.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import info.jiatu.jtlsp.template.domain.LogInfo;
+import info.jiatu.jtlsp.dao.domain.LogInfo;
 
 /**
  * 操作日志(LogInfo)表服务接口

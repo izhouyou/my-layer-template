@@ -1,9 +1,9 @@
-package info.jiatu.jtlsp.template.service.impl;
+package info.jiatu.jtlsp.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import info.jiatu.jtlsp.template.mapper.LogInfoMapper;
-import info.jiatu.jtlsp.template.domain.LogInfo;
-import info.jiatu.jtlsp.template.service.LogInfoService;
+import info.jiatu.jtlsp.dao.domain.LogInfo;
+import info.jiatu.jtlsp.dao.mapper.LogInfoMapper;
+import info.jiatu.jtlsp.service.LogInfoService;
 import org.springframework.stereotype.Service;
 
 /**

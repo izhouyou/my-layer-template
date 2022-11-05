@@ -1,16 +1,14 @@
-package info.jiatu.jtlsp.template.domain;
-
-import java.util.Date;
-
-import com.baomidou.mybatisplus.extension.activerecord.Model;
-
-import java.io.Serializable;
+package info.jiatu.jtlsp.dao.domain;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.extension.activerecord.Model;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.io.Serializable;
+import java.util.Date;
 
 /**
  * 操作日志(LogInfo)实体类

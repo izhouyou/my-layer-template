@@ -1,9 +1,10 @@
-package info.jiatu.jtlsp.template.service.impl;
+package info.jiatu.jtlsp.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import info.jiatu.jtlsp.template.mapper.LogErrorInfoMapper;
-import info.jiatu.jtlsp.template.domain.LogErrorInfo;
-import info.jiatu.jtlsp.template.service.LogErrorInfoService;
+import info.jiatu.jtlsp.dao.domain.LogErrorInfo;
+import info.jiatu.jtlsp.dao.mapper.LogErrorInfoMapper;
+import info.jiatu.jtlsp.service.LogErrorInfoService;
+import info.jiatu.jtlsp.service.LogErrorInfoService;
 import org.springframework.stereotype.Service;
 
 /**
