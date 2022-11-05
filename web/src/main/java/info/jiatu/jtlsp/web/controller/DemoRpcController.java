@@ -1,6 +1,6 @@
 package info.jiatu.jtlsp.web.controller;
 
-import info.jiatu.jtlsp.web.rpc.service.DemoRpcService;
+import info.jiatu.jtlsp.rpc.service.DemoRpcService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

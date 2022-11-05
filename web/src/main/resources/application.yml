@@ -4,7 +4,7 @@ spring:
 server:
   port: 8080
 swagger:
-  base-package: info.jiatu.jtlsp.template
+  base-package: info.jiatu.jtlsp.web
   title: ${spring.application.name}
   author-name: jtlsp
 logback:

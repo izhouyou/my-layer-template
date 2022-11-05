@@ -12,7 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @editNote
  */
 @SpringBootApplication(scanBasePackages = "info.jiatu.jtlsp")
-@RetrofitScan("info.jiatu.jtlsp.template.rpc.service")
+@RetrofitScan("info.jiatu.jtlsp.rpc.service")
 public class MySubcontractTemplateApplication {
 
     public static void main(String[] args) {
