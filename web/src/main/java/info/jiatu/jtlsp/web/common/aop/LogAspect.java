@@ -6,7 +6,7 @@ import info.jiatu.jtlsp.dao.domain.LogErrorInfo;
 import info.jiatu.jtlsp.dao.domain.LogInfo;
 import info.jiatu.jtlsp.service.LogErrorInfoService;
 import info.jiatu.jtlsp.service.LogInfoService;
-import info.jiatu.jtlsp.web.util.IpUtils;
+import info.jiatu.jtlsp.common.util.IpUtils;
 import info.jiatu.jtlsp.common.util.JacksonUtils;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.*;

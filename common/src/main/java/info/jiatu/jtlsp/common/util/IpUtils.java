@@ -1,4 +1,4 @@
-package info.jiatu.jtlsp.web.util;
+package info.jiatu.jtlsp.common.util;
 
 import javax.servlet.http.HttpServletRequest;
 
