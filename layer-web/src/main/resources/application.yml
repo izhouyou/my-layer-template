@@ -1,6 +1,10 @@
 spring:
   profiles:
     active: local
+  mvc:
+    pathmatch:
+      # 解决与swagger的冲突
+      matching-strategy: ant_path_matcher
 server:
   port: 8080
 swagger:
