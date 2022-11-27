@@ -8,9 +8,9 @@ spring:
 server:
   port: 8080
 swagger:
-  base-package: info.jiatu.jtlsp.web
+  base-package: com.youzi.layer.web
   title: ${spring.application.name}
-  author-name: jtlsp
+  author-name: youzi
 logback:
   path: .logs
   service-name: ${spring.application.name}
