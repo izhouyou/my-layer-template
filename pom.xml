@@ -7,14 +7,14 @@
     <groupId>com.izhouy.template</groupId>
     <artifactId>my-layer-template</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <modules>
-        <module>web</module>
-        <module>service</module>
-        <module>common</module>
-        <module>dao</module>
-        <module>rpc</module>
-        <module>model</module>
+        <module>layer-web</module>
+        <module>layer-service</module>
+        <module>layer-common</module>
+        <module>layer-dao</module>
+        <module>layer-rpc</module>
+        <module>layer-model</module>
     </modules>
 
     <properties>
@@ -22,7 +22,7 @@
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <spring-boot.version>2.3.7.RELEASE</spring-boot.version>
+        <spring-boot.version>2.7.5</spring-boot.version>
     </properties>
 
     <dependencyManagement>

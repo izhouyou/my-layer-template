@@ -75,7 +75,7 @@ public class RedisUtils {
         if (key != null && key.length > 0) {
             return redisTemplate.delete(key[0]);
         } else {
-            Long delete = redisTemplate.delete(CollectionUtils.arrayToList(key));
+            Long delete = redisTemplate.delete((List<String>)CollectionUtils.arrayToList(key));
             return delete > 0;
         }
     }
@@ -212,7 +212,7 @@ public class RedisUtils {
         if (key != null && key.length > 0) {
             return stringRedisTemplate.delete(key[0]);
         } else {
-            Long delete = stringRedisTemplate.delete(CollectionUtils.arrayToList(key));
+            Long delete = stringRedisTemplate.delete((List<String>)CollectionUtils.arrayToList(key));
             return delete > 0;
         }
     }

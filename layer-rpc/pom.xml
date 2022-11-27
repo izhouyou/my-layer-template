@@ -5,11 +5,11 @@
     <parent>
         <artifactId>my-layer-template</artifactId>
         <groupId>com.izhouy.template</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>service</artifactId>
+    <artifactId>layer-rpc</artifactId>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -18,19 +18,13 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.izhouy.template</groupId>
-            <artifactId>common</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>com.github.lianjiatech</groupId>
+            <artifactId>retrofit-spring-boot-starter</artifactId>
         </dependency>
         <dependency>
             <groupId>com.izhouy.template</groupId>
-            <artifactId>dao</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.izhouy.template</groupId>
-            <artifactId>model</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <artifactId>layer-model</artifactId>
+            <version>1.0.0</version>
         </dependency>
     </dependencies>
 
