@@ -35,6 +35,31 @@
                 <scope>import</scope>
             </dependency>
             <dependency>
+                <groupId>com.izhouy.template</groupId>
+                <artifactId>layer-common</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.izhouy.template</groupId>
+                <artifactId>layer-dao</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.izhouy.template</groupId>
+                <artifactId>layer-model</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.izhouy.template</groupId>
+                <artifactId>layer-rpc</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.izhouy.template</groupId>
+                <artifactId>layer-service</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+            <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>1.18.24</version>

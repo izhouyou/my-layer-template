@@ -20,7 +20,6 @@
         <dependency>
             <groupId>com.izhouy.template</groupId>
             <artifactId>layer-common</artifactId>
-            <version>1.0.0</version>
         </dependency>
     </dependencies>
 

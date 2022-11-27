@@ -20,17 +20,14 @@
         <dependency>
             <groupId>com.izhouy.template</groupId>
             <artifactId>layer-common</artifactId>
-            <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.izhouy.template</groupId>
             <artifactId>layer-dao</artifactId>
-            <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.izhouy.template</groupId>
             <artifactId>layer-model</artifactId>
-            <version>1.0.0</version>
         </dependency>
     </dependencies>
 
